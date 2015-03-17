@@ -1,0 +1,16 @@
+<ion-view view-title="Browse">
+  <ion-content>
+    <h1>Browse</h1>
+		<div>
+			<div id="cloud-tags">
+				<jqcloud words="currentTags" width="500" height="350" steps="7"></jqcloud>
+			</div>
+			<div id="search-area">
+				<p id="looking-for"> Je recherche un(e)</p>
+				<input ng-model="value" type="text" id="job" placeholder="{{jobPlaceholder}}"/ ng-keyup="jobsEvent(value, $event)"><br/>
+				<input type="text" id="cost-per-hour" placeholder="10"/><span id="cost-per-hour-details">$ / H</span><br/>
+				<button>OK</button>
+			</div>
+	</div>
+  </ion-content>
+</ion-view>
